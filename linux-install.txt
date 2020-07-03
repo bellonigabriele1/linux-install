@@ -1,0 +1,30 @@
+sudo apt install curl
+curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+should install nodejs and npm; remember to set the correct version in the url
+if doesn't install npm try
+
+sudo apt install npm
+
+then install angular/cli
+
+sudo npm install -g @angular/cli
+
+to check versions
+ng version
+npm version
+node -v
+
+for downloaded projects just run npm install inside the project folder
+if problems either doesn't build and or doesn't allow you to do ng g c from cli-->
+npm install
+npm audit fix
+npm i @angular-devkit/build-angular@0.803.24
+
+that is: 
+npm install && npm audit fix && npm i @angular-devkit/build-angular@0.803.24 && git init && ng serve
+it should work
+
+How to Deploy Angular Application to Heroku
+https://itnext.io/how-to-deploy-angular-application-to-heroku-1d56e09c5147
